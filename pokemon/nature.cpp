@@ -2,17 +2,7 @@
 
 nature::nature()
 {
-	pokeNature = "";
-}
-
-void nature::printNature()
-{
-	cout << "Nature: " << pokeNature << endl;
-}
-
-void nature::setNature(string pokeNat)
-{
-	string message = "The only valid natures are as follows:\n \n"
+	pokeNature = "The only valid natures are as follows:\n \n"
 		"1. Adamant: +Attack, -Special Attack\n"
 		"2. Bashful: No effect\n"
 		"3. Bold: +Defense, -Attack\n"
@@ -37,8 +27,16 @@ void nature::setNature(string pokeNat)
 		"22. Relaxed: +Defense, -Speed\n"
 		"23. Sassy: +Special Defense, -Speed\n"
 		"24. Serious: No effect\n"
-		"25. Timid: +Speed, -Attack";
+		"25. Timid: +Speed, -Attack";;
+}
 
+void nature::printNature()
+{
+	cout << "Nature: " << pokeNature << endl;
+}
+
+void nature::setNature(string pokeNat)
+{
 	if (pokeNat == "Adamant" ||
 		pokeNat == "Bashful" ||
 		pokeNat == "Bold" ||
@@ -92,97 +90,9 @@ void nature::setNature(string pokeNat)
 	{
 		pokeNature = pokeNat;
 	}
-	else
-	{
-		pokeNature = message;
-	}
 }
 
 string nature::getNature()
 {
-
-	string message = "The only valid natures are as follows:\n \n"
-		"1. Adamant: +Attack, -Special Attack\n"
-		"2. Bashful: No effect\n"
-		"3. Bold: +Defense, -Attack\n"
-		"4. Brave: +Attack, -Speed\n"
-		"5. Calm: +Special Defense, -Attack\n"
-		"6. Careful: +Special Defense, -Special Attack\n"
-		"7. Docile: No effect\n"
-		"8. Gentle: +Special Defense, -Defense\n"
-		"9. Hardy: No effect\n"
-		"10. Hasty: +Speed, -Defense\n"
-		"11. Impish: +Defense, -Special Attack\n"
-		"12. Jolly: +Speed, -Special Attack\n"
-		"13. Lax: +Defense, -Special Defense\n"
-		"14. Lonely: +Attack, -Defense\n"
-		"15. Mild: +Special Attack, -Defense\n"
-		"16. Modest: +Special Attack, -Attack\n"
-		"17. Naive: +Speed, -Special Defense\n"
-		"18. Naughty: +Attack, -Special Defense\n"
-		"19. Quiet: +Special Attack, -Speed\n"
-		"20. Quirky: No effect\n"
-		"21. Rash: +Special Attack, -Special Defense\n"
-		"22. Relaxed: +Defense, -Speed\n"
-		"23. Sassy: +Special Defense, -Speed\n"
-		"24. Serious: No effect\n"
-		"25. Timid: +Speed, -Attack";
-
-	if(pokeNature == "Adamant" ||
-		pokeNature == "Bashful" ||
-		pokeNature == "Bold" ||
-		pokeNature == "Brave" ||
-		pokeNature == "Calm" ||
-		pokeNature == "Careful" ||
-		pokeNature == "Docile" ||
-		pokeNature == "Gentle" ||
-		pokeNature == "Hardy" ||
-		pokeNature == "Hasty" ||
-		pokeNature == "Impish" ||
-		pokeNature == "Jolly" ||
-		pokeNature == "Lax" ||
-		pokeNature == "Lonely" ||
-		pokeNature == "Mild" ||
-		pokeNature == "Modest" ||
-		pokeNature == "Naive" ||
-		pokeNature == "Naughty" ||
-		pokeNature == "Quiet" ||
-		pokeNature == "Quirky" ||
-		pokeNature == "Rash" ||
-		pokeNature == "Relaxed" ||
-		pokeNature == "Sassy" ||
-		pokeNature == "Serious" ||
-		pokeNature == "Timid" ||
-		pokeNature == "adamant" ||
-		pokeNature == "bashful" ||
-		pokeNature == "bold" ||
-		pokeNature == "brave" ||
-		pokeNature == "calm" ||
-		pokeNature == "careful" ||
-		pokeNature == "docile" ||
-		pokeNature == "gentle" ||
-		pokeNature == "hardy" ||
-		pokeNature == "hasty" ||
-		pokeNature == "impish" ||
-		pokeNature == "jolly" ||
-		pokeNature == "lax" ||
-		pokeNature == "lonely" ||
-		pokeNature == "mild" ||
-		pokeNature == "modest" ||
-		pokeNature == "naive" ||
-		pokeNature == "naughty" ||
-		pokeNature == "quiet" ||
-		pokeNature == "quirky" ||
-		pokeNature == "rash" ||
-		pokeNature == "relaxed" ||
-		pokeNature == "sassy" ||
-		pokeNature == "serious" ||
-		pokeNature == "timid")
-		{
-			return pokeNature;
-		}
-		else
-		{
-			return message;
-		}
+	return pokeNature;
 }

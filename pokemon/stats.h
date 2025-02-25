@@ -16,21 +16,12 @@ public:
 	void setIndividualValues(int ivHp, int ivAttack, int ivSpAttack, int ivDefense, int ivSpDefense, int ivSpeed);
 	void setEffortValues(int evHp, int evAttack, int evSpAttack, int evDefense, int evSpDefense, int evSpeed);
 	void setLevel(int level);
-	string getEffortValues();
+	void setStatsToCalc();
+	void setStatsToDefault();
+	string getBaseStats();
 	string getIndividualValues();
-	/* Uncomment if needed.
-	void setAttack(int attack);
-	void setSpAttack(int sp_attack);
-	void setDefense(int defense);
-	void setSpDefense(int sp_defense);
-	void setSpeed(int speed);
-	int getLevel();
-	int getAttack();
-	int getSpAttack();
-	int getDefense();
-	int getSpDefense();
-	int getSpeed();
-	*/
+	string getEffortValues();
+	string getLevel();
 
 private:
 	int level;

@@ -14,10 +14,15 @@ pokemon::pokemon(string name = "", string gender = "")
 
 void pokemon::printPokemon()
 {
+	// Print pokemon name and gender.
 	cout << "Pokemon: " << name << endl;
 	cout << "Gender: " << gender << endl;
+
+	// Print pokemon nature.
 	printNature();
 	cout << endl;
+
+	// Print pokemon stats.
 	printStats();
 	cout << "_________________________________" << endl << endl;
 }
