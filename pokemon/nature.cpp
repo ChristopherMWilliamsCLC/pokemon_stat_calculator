@@ -85,7 +85,7 @@ void nature::setNature(string pokeNat)
 		pokeNat == "rash" ||
 		pokeNat == "relaxed" ||
 		pokeNat == "sassy" ||
-		pokeNat == "erious" ||
+		pokeNat == "serious" ||
 		pokeNat == "timid")
 	{
 		pokeNature = pokeNat;

@@ -55,11 +55,11 @@ void stats::printStats()
 
 	/*
 		Below is just to make sure that if one thing isn't set correctly then everything is reset to default.
-		Just to make sure the user isn't mislead into thinking that a correct stat calculation was performed
+		Just to make sure the user isn't misled into thinking that a correct stat calculation was performed
 		by not seeing a error message.
 	*/
 
-	// Checks if nature, ev, or iv isn't set correctly.
+	// Checks if nature, ev, or iv isn't set correctly. If any of them is a default value they're all set to default.
 	if (getNature() == message || getEffortValues() == "0 0 0 0 0 0" || getIndividualValues() == "1 1 1 1 1 1")
 	{
 		// Sets the level, ev, and iv to the stats class default constructor value.

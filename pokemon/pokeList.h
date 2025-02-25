@@ -1,10 +1,10 @@
 // List of functions with pokemon class objects. 
 // Assumes that IV values are perfect 31's.
-// sNature should be a valid pokemon nature begining with a capital letter and subsequent lowercase letters.
-// Example: "Adamant", nature.h has a list of natures and what they do.
-// Other arguments are for the pokemon's level and effort values. 
-// You can have a total of 510 EV's between all effort values combined with a max of 255 EV's for any single effort value.
-// If the effort value's entered aren't valid then all EV's will default to 0 and continue running the program.
+// sNature should be a valid pokemon nature.
+// nature.h has a list of natures and what they do.
+// Arguments after sNature are for the pokemon's level, and effort values. 
+// Pokemon can have a total of 510 EV's between all effort values combined, and a max of 255 for any single effort value.
+// If the nature or effort values aren't entered correctly a stat calculation will not be performed.
 
 #include "pokemon.h"
 void Bulbasaur(string sNature, int iLevel, int evHp, int evAttack, int evSpAttack, int evDefense, int evSpDefense, int evSpeed);

@@ -31,9 +31,11 @@ For example, here are the base stats for Charizard:
 
 int main()
 {
-	//pokemon Charmander
-	Charizard("adamant", 50, 6, 252, 0, 0, 0, 252);
+	// Tests to see if everything works properly.
+	Charizard("adamant", 100, 6, 252, 0, 0, 0, 252);
 	Charizard("Adamant", 50, 6, 252, 0, 0, 0, 252);
+
+	// Example to produce error messages.
 	Charizard("adamnt", 50, 7, 252, 0, 0, 0, 252);
 
  /* If you need to change the IV's you can do it like this. Functions above assume the IV values are perfect.
