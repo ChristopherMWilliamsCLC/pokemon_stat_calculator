@@ -202,18 +202,18 @@ void stats::setStatsToCalc()
 		attack = (((2 * attack + iv_attack + (ev_attack / 4)) * level) / 100 + 5) * 1.1;
 	}
 	else if (getNature() == "Bold" ||
-		getNature() == "Calm" ||
-		getNature() == "Modest" ||
-		getNature() == "bold" ||
-		getNature() == "calm" ||
-		getNature() == "modest")
+			 getNature() == "Calm" ||
+			 getNature() == "Modest" ||
+			 getNature() == "bold" ||
+			 getNature() == "calm" ||
+			 getNature() == "modest")
 	{
 		attack = (((2 * attack + iv_attack + (ev_attack / 4)) * level) / 100 + 5) * 0.9;
 	}
 	else
-{
+	{
 		attack = (((2 * attack + iv_attack + (ev_attack / 4)) * level) / 100 + 5) * 1.0;
-}
+	}
 
 	// Sp. Attack stat calculations.
 	if (getNature() == "Mild" ||
@@ -224,20 +224,20 @@ void stats::setStatsToCalc()
 		sp_attack = (((2 * sp_attack + iv_sp_attack + (ev_sp_attack / 4)) * level) / 100 + 5) * 1.1;
 	}
 	else if (getNature() == "Jolly" ||
-		getNature() == "Impish" ||
-		getNature() == "Careful" ||
-		getNature() == "Adamant" ||
-		getNature() == "jolly" ||
-		getNature() == "impish" ||
-		getNature() == "careful" ||
-		getNature() == "adamant")
+			 getNature() == "Impish" ||
+			 getNature() == "Careful" ||
+			 getNature() == "Adamant" ||
+			 getNature() == "jolly" ||
+			 getNature() == "impish" ||
+			 getNature() == "careful" ||
+			 getNature() == "adamant")
 	{
 		sp_attack = (((2 * sp_attack + iv_sp_attack + (ev_sp_attack / 4)) * level) / 100 + 5) * 0.9;
 	}
 	else
-{
+	{
 		sp_attack = (((2 * sp_attack + iv_sp_attack + (ev_sp_attack / 4)) * level) / 100 + 5) * 1.0;
-}
+	}
 
 	// Defense stat calculations.
 	if (getNature() == "Bold" ||
@@ -252,20 +252,20 @@ void stats::setStatsToCalc()
 		defense = (((2 * defense + iv_defense + (ev_defense / 4)) * level) / 100 + 5) * 1.1;
 	}
 	else if (getNature() == "Mild" ||
-		getNature() == "Lonely" ||
-		getNature() == "Hasty" ||
-		getNature() == "Gentle" ||
-		getNature() == "mild" ||
-		getNature() == "lonely" ||
-		getNature() == "hasty" ||
-		getNature() == "gentle")
+			 getNature() == "Lonely" ||
+			 getNature() == "Hasty" ||
+			 getNature() == "Gentle" ||
+			 getNature() == "mild" ||
+			 getNature() == "lonely" ||
+			 getNature() == "hasty" ||
+			 getNature() == "gentle")
 	{
 		defense = (((2 * defense + iv_defense + (ev_defense / 4)) * level) / 100 + 5) * 0.9;
 	}
 	else
-{
+	{
 		defense = (((2 * defense + iv_defense + (ev_defense / 4)) * level) / 100 + 5) * 1.0;
-}
+	}
 
 	// Sp. Defense stat calculations.
 	if (getNature() == "Calm" ||
@@ -278,14 +278,14 @@ void stats::setStatsToCalc()
 		sp_defense = (((2 * sp_defense + iv_sp_defense + (ev_sp_defense / 4)) * level) / 100 + 5) * 1.1;
 	}
 	else if (getNature() == "Lax" ||
-		getNature() == "lax")
+			 getNature() == "lax")
 	{
 		sp_defense = (((2 * sp_defense + iv_sp_defense + (ev_sp_defense / 4)) * level) / 100 + 5) * 0.9;
 	}
 	else
-{
+	{
 		sp_defense = (((2 * sp_defense + iv_sp_defense + (ev_sp_defense / 4)) * level) / 100 + 5) * 1.0;
-}
+	}
 
 	// Speed stat calculations.
 	if (getNature() == "Hasty" ||
@@ -296,12 +296,12 @@ void stats::setStatsToCalc()
 		speed = (((2 * speed + iv_speed + (ev_speed / 4)) * level) / 100 + 5) * 1.1;
 	}
 	else if (getNature() == "Brave" ||
-		getNature() == "brave")
-{
+			 getNature() == "brave")
+	{
 		speed = (((2 * speed + iv_speed + (ev_speed / 4)) * level) / 100 + 5) * 0.9;
-}
+	}
 	else
-{
+	{
 		speed = (((2 * speed + iv_speed + (ev_speed / 4)) * level) / 100 + 5) * 1.0;
 	}
 }
