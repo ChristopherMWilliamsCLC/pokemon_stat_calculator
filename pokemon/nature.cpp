@@ -88,8 +88,8 @@ void nature::setNature(string pokeNat)
 		pokeNat == "serious" ||
 		pokeNat == "timid")
 	{
-		pokeNature = pokeNat;
-	}
+	pokeNature = pokeNat;
+}
 }
 
 string nature::getNature()

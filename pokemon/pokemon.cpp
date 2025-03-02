@@ -20,6 +20,7 @@ void pokemon::printPokemon()
 
 	// Print pokemon nature.
 	printNature();
+	cout << "_________________________________" << endl;
 	cout << endl;
 
 	// Print pokemon stats.
