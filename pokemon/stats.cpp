@@ -65,6 +65,13 @@ void stats::printStats()
 		// Sets the level, ev, and iv to the stats class default constructor value.
 		setStatsToDefault();
 	}
+	else if (getNature() == "Jolly" ||
+			 getNature() == "Impish" ||
+			 getNature() == "Careful" ||
+			 getNature() == "Adamant")
+	{
+		sp_attack = (((2 * sp_attack + iv_sp_attack + (ev_sp_attack / 4)) * level) / 100 + 5) * 0.9;
+	}
 	else
 	{
 		// Handles all the math to calculate and set the final stats.
@@ -79,6 +86,7 @@ void stats::printStats()
 	cout << "Defense: " << iv_defense << endl;
 	cout << "Sp. Defense: " << iv_sp_defense << endl;
 	cout << "Speed: " << iv_speed << endl;
+
 	cout << endl;
 
 	// Outputs the effort values.
@@ -89,6 +97,8 @@ void stats::printStats()
 	cout << "Defense: " << ev_defense << endl;
 	cout << "Sp. Defense: " << ev_sp_defense << endl;
 	cout << "Speed: " << ev_speed << endl;
+
+
 	cout << endl;
 
 	// Outputs the final stat calculation.
@@ -208,9 +218,9 @@ void stats::setStatsToCalc()
 		attack = (((2 * attack + iv_attack + (ev_attack / 4)) * level) / 100 + 5) * 0.9;
 	}
 	else
-	{
+{
 		attack = (((2 * attack + iv_attack + (ev_attack / 4)) * level) / 100 + 5) * 1.0;
-	}
+}
 
 	// Sp. Attack stat calculations.
 	if (getNature() == "Mild" ||
@@ -232,9 +242,9 @@ void stats::setStatsToCalc()
 		sp_attack = (((2 * sp_attack + iv_sp_attack + (ev_sp_attack / 4)) * level) / 100 + 5) * 0.9;
 	}
 	else
-	{
+{
 		sp_attack = (((2 * sp_attack + iv_sp_attack + (ev_sp_attack / 4)) * level) / 100 + 5) * 1.0;
-	}
+}
 
 	// Defense stat calculations.
 	if (getNature() == "Bold" ||
@@ -260,9 +270,9 @@ void stats::setStatsToCalc()
 		defense = (((2 * defense + iv_defense + (ev_defense / 4)) * level) / 100 + 5) * 0.9;
 	}
 	else
-	{
+{
 		defense = (((2 * defense + iv_defense + (ev_defense / 4)) * level) / 100 + 5) * 1.0;
-	}
+}
 
 	// Sp. Defense stat calculations.
 	if (getNature() == "Calm" ||
@@ -280,9 +290,9 @@ void stats::setStatsToCalc()
 		sp_defense = (((2 * sp_defense + iv_sp_defense + (ev_sp_defense / 4)) * level) / 100 + 5) * 0.9;
 	}
 	else
-	{
+{
 		sp_defense = (((2 * sp_defense + iv_sp_defense + (ev_sp_defense / 4)) * level) / 100 + 5) * 1.0;
-	}
+}
 
 	// Speed stat calculations.
 	if (getNature() == "Hasty" ||
@@ -294,11 +304,11 @@ void stats::setStatsToCalc()
 	}
 	else if (getNature() == "Brave" ||
 		getNature() == "brave")
-	{
+{
 		speed = (((2 * speed + iv_speed + (ev_speed / 4)) * level) / 100 + 5) * 0.9;
-	}
+}
 	else
-	{
+{
 		speed = (((2 * speed + iv_speed + (ev_speed / 4)) * level) / 100 + 5) * 1.0;
 	}
 }
