@@ -65,13 +65,6 @@ void stats::printStats()
 		// Sets the level, ev, and iv to the stats class default constructor value.
 		setStatsToDefault();
 	}
-	else if (getNature() == "Jolly" ||
-			 getNature() == "Impish" ||
-			 getNature() == "Careful" ||
-			 getNature() == "Adamant")
-	{
-		sp_attack = (((2 * sp_attack + iv_sp_attack + (ev_sp_attack / 4)) * level) / 100 + 5) * 0.9;
-	}
 	else
 	{
 		// Handles all the math to calculate and set the final stats.
